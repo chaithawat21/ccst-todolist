@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "id": "54cf",
+      "name": "andy",
+      "password": "a1234",
+      "email": "andy@ggg.cc"
+    },
+    {
+      "id": "dc4a",
+      "name": "bobby",
+      "password": "b1234",
+      "email": "bobby@cc"
+    },
+    {
+      "id": "6a50",
+      "name": "candy",
+      "password": "c1234",
+      "email": "candy@cc"
+    },
+    {
+      "id": "51a2",
+      "name": "test",
+      "password": "t1234",
+      "email": "test@gmail.com"
+    },
+    {
+      "id": "6a81",
+      "name": "easy",
+      "password": "e1234",
+      "email": "eas@gmail.com"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "1",
+      "todo": "Do something nice for someone",
+      "completed": false,
+      "userId": "54cf"
+    },
+    {
+      "id": "2",
+      "todo": "Memorize the fifty states and their capitals",
+      "completed": false,
+      "userId": "dc4a"
+    },
+    {
+      "id": "3",
+      "todo": "Watch a classic movie",
+      "completed": false,
+      "userId": "6a50"
+    },
+    {
+      "id": "4",
+      "todo": "Contribute code or a monetary donation to an open-source software project",
+      "completed": false,
+      "userId": "dc4a"
+    },
+    {
+      "id": "5",
+      "todo": "Solve a Rubik's cube",
+      "completed": false,
+      "userId": "6a50"
+    },
+    {
+      "id": "6",
+      "todo": "Learn HTML",
+      "completed": false,
+      "userId": "54cf"
+    }
+  ]
+}
