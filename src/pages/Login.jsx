@@ -1,13 +1,11 @@
 // import React from 'react'
-import AuthContext from "../contexts/AuthContext"
 import axios from "axios"
-
-
-import { useState, useContext } from "react"
+import { useState} from "react"
+import useAuth from "../hooks/useAuth"
 
 function Login() {
   
-    const {  setIsLogin, setUser } = useContext(AuthContext)
+    const { setUser } = useAuth()
     // const navigate = useNavigate()
     const [input, setInput] = useState({
         name: '',
@@ -23,25 +21,23 @@ function Login() {
 
     const hdlSubmit = async (e) => {
         e.preventDefault()
+        if (!input.name.trim() || !input.password.trim())
+            return alert('Please fill all input')
        try {
         // login in
         // check username that input in database
         const res = await axios.get(`http://localhost:8000/users?name=${input.name}`)
         if(!res.data.length) {
-            
             return alert('Invalid Login')
-            
-
         }
         const foundUser = res.data[0]
         // check password is correct 
         if (foundUser.password !== input.password) {
-            return alert('Invalid Login')
+            return alert('Invalid password')
         }
         // keep user login in AuthContext:user / localStorage
         localStorage.setItem('user', JSON.stringify(foundUser))
         setUser(foundUser)
-        setIsLogin(true)
         alert('Login Successful')
         console.log(res.data.length);
 
@@ -71,7 +67,7 @@ function Login() {
             />
         </label>
         <input type="submit" value='Login' />
-        {/* {isLogin && <p>Login Successful</p>} */}
+
 
     </form>
     

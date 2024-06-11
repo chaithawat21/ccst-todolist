@@ -28,8 +28,15 @@
       "id": "6a81",
       "name": "easy",
       "password": "e1234",
-      "email": "eas@gmail.com"
+      "email": "easy@gmail.com"
+    },
+    {
+      "id": "9913",
+      "name": "danny",
+      "password": "d1234",
+      "email": "danny@gmail.com"
     }
+
   ],
   "jobs": [
     {

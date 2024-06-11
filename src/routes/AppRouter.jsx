@@ -1,16 +1,18 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { useContext } from 'react'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import Layout from '../layout/Layout'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
-import AuthContext from "../contexts/AuthContext";
+import useAuth from '../hooks/useAuth'
+import TodoApp from '../pages/TodoApp'
+import Profile from '../pages/Profile'
 
-const loginRouter = createBrowserRouter([{
+const userRouter = createBrowserRouter([{
   path : '/',
   element : <Layout />,
   children : [
-    {path : '', element : <Login />},
-    {path : '/register', element : <Register />}
+    {path : '', element : <TodoApp />},
+    {path : '/profile', element : <Profile />},
+    {path : '*', element : <Navigate to='/' />}
 
   ]
 
@@ -22,7 +24,8 @@ const guestRouter = createBrowserRouter([{
       element : <Layout />,
       children : [
         {path : '', element : <Login />},
-        {path : '/register', element : <Register />}
+        {path : '/register', element : <Register />},
+        {path : '*', element : <Navigate to='/' />}
 
       ]
 
@@ -31,11 +34,11 @@ const guestRouter = createBrowserRouter([{
 
 function AppRounter() {
   
-  const {isLogin} = useContext(AuthContext)
+  const {user} = useAuth()
   
   return (
     <>
-   <RouterProvider router={ isLogin ? loginRouter : guestRouter } />
+   <RouterProvider router={ user ? userRouter : guestRouter } />
     </>
   )
 }

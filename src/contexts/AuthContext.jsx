@@ -6,15 +6,15 @@ const userLogin = localStorage.getItem('user')
 
 
 
-function AuthContextProvider(props) {
+function AuthContextProvider({children}) {
 
-    const [isLogin, setIsLogin] = useState(!!userLogin)
+    // const [isLogin, setIsLogin] = useState(!!userLogin)
     const [user, setUser] = useState(JSON.parse(userLogin))
     
 
   return (
-    <AuthContext.Provider value={{ isLogin, setIsLogin, user, setUser }}>
-      {props.children}
+    <AuthContext.Provider value={{ user, setUser }}>
+      {children}
     </AuthContext.Provider>
   )
 }

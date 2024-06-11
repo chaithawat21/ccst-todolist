@@ -17,6 +17,9 @@ body {
 header {
   padding: 1rem;
   background-color: aquamarine;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
 }
 header nav {
   display: flex;
@@ -38,4 +41,20 @@ header nav {
 
 .form input {
   font-size: 20px;
+}
+.job {
+  padding: 1rem;
+}
+.todoapp {
+  width: 40rem;
+  border: 1px solid lightgray;
+  
+  margin: auto;
+}
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid lightgray;
+  padding: 1rem;
 }
