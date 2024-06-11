@@ -1,9 +1,14 @@
 // import React from 'react'
+import useAuth from "../hooks/useAuth"
 
 function Profile() {
-  return (
-    <div>Profile</div>
-  )
+    const { user } = useAuth()
+    return (
+        <div>
+            <h2>Profile</h2>
+            <p>{JSON.stringify(user)}</p>
+        </div>
+    )
 }
 
 export default Profile

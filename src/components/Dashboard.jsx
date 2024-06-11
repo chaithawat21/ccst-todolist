@@ -1,10 +1,12 @@
 // import React from 'react'
 
-function Dashboard() {
+
+
+function Dashboard({amount}) {
   return (
     <div className="dashboard">
         <h3>{new Date().toDateString()}</h3>
-        <p>24 tasks</p>
+        <p>{amount} tasks</p>
     </div>
   )
 }

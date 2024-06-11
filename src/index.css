@@ -48,8 +48,8 @@ header nav {
 .todoapp {
   width: 40rem;
   border: 1px solid lightgray;
-  
   margin: auto;
+ 
 }
 .dashboard {
   display: flex;
@@ -57,4 +57,30 @@ header nav {
   align-items: baseline;
   border-bottom: 1px solid lightgray;
   padding: 1rem;
+}
+input {
+  width: 40rem;
+  padding: .5rem;
+}
+.form-addtodo {
+  display: flex;
+  justify-content: center;
+  flex-grow: 0;
+  gap: .25rem;
+  padding-top: 1rem;
+  padding-inline: 1rem;
+}
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem;
+}
+.todo-item {
+  display: flex;
+  padding-bottom: .5rem;
+  gap: .25rem;
+}
+button {
+  width: 5rem;
 }

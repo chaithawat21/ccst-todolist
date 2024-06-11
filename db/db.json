@@ -36,7 +36,6 @@
       "password": "d1234",
       "email": "danny@gmail.com"
     }
-
   ],
   "jobs": [
     {
@@ -73,6 +72,12 @@
       "id": "6",
       "todo": "Learn HTML",
       "completed": false,
+      "userId": "54cf"
+    },
+    {
+      "id": "064f",
+      "todo": "Hello Noob",
+      "complete": false,
       "userId": "54cf"
     }
   ]

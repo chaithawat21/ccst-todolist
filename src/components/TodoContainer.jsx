@@ -1,15 +1,20 @@
 // import React from 'react'
 
-import TodoItem from "./TodoItem"
+import { useState } from "react";
+import TodoItem from "./TodoItem";
 
-function TodoContainer() {
+function TodoContainer({ jobs, reload }) {
+  const [editID, setEditID] = useState(-1);
+
   return (
-   <>
-   <TodoItem />
-   <TodoItem />
-   <TodoItem />
-   </>
-  )
+    <>
+      <div className="todo-container">
+        {jobs.map((el) => (
+          <TodoItem key={el.id} job={el} reload={reload} editID={editID} setEditID={setEditID}/>
+        ))}
+      </div>
+    </>
+  );
 }
 
-export default TodoContainer
+export default TodoContainer;
