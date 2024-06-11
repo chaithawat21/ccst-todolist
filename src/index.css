@@ -84,3 +84,7 @@ input {
 button {
   width: 5rem;
 }
+.checkbox {
+  padding: 0;
+  width: 1rem;
+}

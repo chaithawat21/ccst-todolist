@@ -3,9 +3,12 @@
 import { useState } from "react";
 import TodoItem from "./TodoItem";
 
-function TodoContainer({ jobs, reload }) {
-  const [editID, setEditID] = useState(-1);
 
+function TodoContainer({ jobs, reload }) {
+  
+  const [editID, setEditID] = useState(-1);
+  
+  
   return (
     <>
       <div className="todo-container">

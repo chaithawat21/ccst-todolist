@@ -42,7 +42,8 @@
       "id": "1",
       "todo": "Do something nice for someone",
       "completed": false,
-      "userId": "54cf"
+      "userId": "54cf",
+      "complete": false
     },
     {
       "id": "2",
@@ -54,25 +55,29 @@
       "id": "3",
       "todo": "Watch a classic movie",
       "completed": false,
-      "userId": "6a50"
+      "userId": "6a50",
+      "complete": false
     },
     {
       "id": "4",
       "todo": "Contribute code or a monetary donation to an open-source software project",
       "completed": false,
-      "userId": "dc4a"
+      "userId": "dc4a",
+      "complete": false
     },
     {
       "id": "5",
       "todo": "Solve a Rubik's cube",
       "completed": false,
-      "userId": "6a50"
+      "userId": "6a50",
+      "complete": true
     },
     {
       "id": "6",
       "todo": "Learn HTML",
       "completed": false,
-      "userId": "54cf"
+      "userId": "54cf",
+      "complete": true
     },
     {
       "id": "064f",
