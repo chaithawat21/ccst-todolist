@@ -59,13 +59,14 @@ header nav {
   padding: 1rem;
 }
 input {
+  /* flex-grow: 1; */
   width: 40rem;
   padding: .5rem;
 }
 .form-addtodo {
   display: flex;
   justify-content: center;
-  flex-grow: 0;
+  
   gap: .25rem;
   padding-top: 1rem;
   padding-inline: 1rem;
@@ -85,6 +86,13 @@ button {
   width: 5rem;
 }
 .checkbox {
-  padding: 0;
+
+  /* width: 40rem; */
+
+ 
+  padding: 5rem;
   width: 1rem;
+}
+.add {
+  width: 4.4rem;
 }

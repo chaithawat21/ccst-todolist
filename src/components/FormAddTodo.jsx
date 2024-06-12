@@ -34,7 +34,7 @@ function FormAddTodo({reload}) {
   return (
     <form className="form-addtodo" onSubmit={hdlSubmit}>
         <input type="text" value={title} onChange={(e)=>setTitle(e.target.value)}/>
-        <button>Add</button>
+        <button className="add">Add</button>
 
     </form>
   )

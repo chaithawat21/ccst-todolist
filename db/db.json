@@ -43,7 +43,7 @@
       "todo": "Do something nice for someone",
       "completed": false,
       "userId": "54cf",
-      "complete": false
+      "complete": true
     },
     {
       "id": "2",
@@ -77,13 +77,19 @@
       "todo": "Learn HTML",
       "completed": false,
       "userId": "54cf",
-      "complete": true
+      "complete": false
     },
     {
-      "id": "064f",
-      "todo": "Hello Noob",
-      "complete": false,
+      "id": "89b1",
+      "todo": "Hello world",
+      "complete": true,
       "userId": "54cf"
+    },
+    {
+      "id": "6f56",
+      "todo": "Yo!",
+      "complete": false,
+      "userId": "51a2"
     }
   ]
 }
